@@ -1,207 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmation Page</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Way - Home</title>
 
-    <style>
-        body{
-    background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhzjBR1Liz-o56jTKwIAb7AWGnNyvuvmVp3khkKxd2JWvf5Eenx05W6bFW4n-7XgUJRAuzFniFDuaFgPMSUVOU0UPkVOMJaUUSry3f9X9IXNrs4k6AtubgWJPj6G8e3jhdpkExVmWWjHhRM/s1600-r/0_ab7b8_f1aa4e95_orig.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f5f7fa; 
     }
-    </style>
+    h2 {
+      font-weight: 900; 
+    }
+    .hero-img {
+      max-width: 400px;
+      height: auto;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 12px 0;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
-    <style>
-.navbar .nav-link {
-    color: black !important;
-}
 
-.navbar .nav-link:hover {
-    color: #333 !important;
-}
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
 
-.contact-container {
-    display: flex;
-    max-width: 1200px;
-    margin: 80px auto;
-    gap: 60px;
-  }
+      <a class="navbar-brand" href="#">
+        <img src="https://www.iconsdb.com/icons/preview/royal-blue/motorcycle-xxl.png" 
+             alt="Logo" height="35">
+      </a>
 
-  .contact-info {
-    flex: 1;
-  }
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>  
 
-  .contact-info h1 {
-    color: #455e82;
-    font-size: 40px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
+      <div class="collapse navbar-collapse" id="mynavbar">
 
-  .contact-info strong {
-    display: block;
-    margin-top: 15px;
-  }
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Fare Matrix</a>
+          </li>
+          <li class="nav-item">
+               <a class="nav-link" href="#">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
 
-  .contact-form {
-    flex: 1;
-  }
-
-  label {
-    font-size: 14px;
-    margin-bottom: 6px;
-    display: block;
-  }
-
-  input, select, textarea {
-    width: 100%;
-    padding: 12px;
-    border-radius: 25px;
-    border: 1px solid #aaa;
-    margin-bottom: 18px;
-  }
-
-  textarea {
-    border-radius: 15px;
-    height: 120px;
-    resize: none;
-  }
-
-  .name-fields {
-    display: flex;
-    gap: 15px;
-  }
-
-  .name-fields div {
-    flex: 1;
-  }
-
-  .send-btn {
-    width: 100%;
-    padding: 15px;
-    background: #2a56d1;
-    color: white;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-  }
-
-  .send-btn:hover {
-    background: #143f88;
-  }
-
-
-  .contact-container {
-  display: flex;
-  max-width: 1200px;
-  margin: 80px auto;
-  gap: 60px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 25px;
-  padding: 50px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.circle-img {
-  border-radius: 50%;
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-}
-    </style>
-</body>
-
-<nav class="navbar navbar-expand-lg navbar-dark"
-     style="background-color: #ffffff;">
-
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-  <img src="file:///C:/Users/User/Downloads/istockphoto-848192216-612x612%20(1).jpg" alt="Logo" width="100" height="75" class="d-inline-block align-text-top">
-</a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <h5><a class="nav-link" href="#">Home</a></h5>
-        </li>
-        <li class="nav-item">
-          <h5><a class="nav-link" href="#">Fares</a></h5>
-        </li>
-        <li class="nav-item">
-          <h5><a class="nav-link" href="#">Schedule</a></h5>
-        </li>
-        <li class="nav-item">
-          <h5><a class="nav-link" href="#">Help</a></h5>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-
-<div class="contact-container">
-  <div class="contact-info">
-    <img src="https://media.istockphoto.com/id/1393750072/vector/flat-white-icon-man-for-web-design-silhouette-flat-illustration-vector-illustration-stock.jpg?s=612x612&w=0&k=20&c=s9hO4SpyvrDIfELozPpiB_WtzQV9KhoMUP9R9gVohoU=" alt="Description" class="circle-img">
-
-    <br><br>
-      <input type="tel" placeholder="Choose File | No file Chosen">
-      <button type="submit" class="send-btn" style="color: #000; font-weight: bold;">Upload Photo</button>
-
-  </div>
-
-  <div class="contact-form">
-    <h1>Register Now!</h1>
-    <strong>This registration form is used to collect the necessary information to create your account and officially register you in our system. Please fill out all required fields accurately and review your details before submitting to ensure everything is correct. Your information will be kept confidential and used only for official purposes.</strong>
-    <br>
-    <form>
-        <br>
-      <label>Name</label>
-      <div class="name-fields">
-        <div>
-          <input type="text" placeholder="First Name">
-        </div>
-        <div>
-          <input type="text" placeholder="Last Name">
-        </div>
-      </div>
-
-      <label>Phone</label>
-      <input type="tel" placeholder="+63 1 6767 6767 67">
-
-      <label>Email</label>
-      <input type="email" placeholder="betilez.rv@obmontessori.edu.ph">
-
-      <label>Password</label>
-      <input type="email" placeholder="Enter your Password here">
-
-
-            <button type="submit" class="send-btn" onclick="showAlert()" style="color: #000; font-weight: bold;">Create Account</button>
+        <form class="d-flex ms-auto">
+          <button class="btn btn-primary px-4" type="button">
+            Create Account
+          </button>
         </form>
 
-        <p id="message"></p>
+      </div> 
+    </div>
+  </nav> 
+
+  <div class="container text-center mt-5">
+
+    <p class="fw-bold display-4" style="color: #0B4E8A;">
+      BLUE WAY
+    </p>
+
+    <img class="img-fluid rounded shadow hero-img mt-3" 
+         src="https://images.gmanews.tv/webpics/2025/12/3_2025_12_20_16_32_41.jpg" 
+         alt="Motorcycle Ride">
+
+    <div class="mt-4">
+
+      <h2>
+        Experience fast rides with no traffic!
+      </h2>
+
+      <p class="text-muted">
+        Book now and enjoy your first ride anywhere, anytime.
+      </p>
 
     </div>
-</div>
 
-<script>
-    function showAlert(){
-        alert("The form has been submitted.");
+    <details class="mt-3" ontoggle="showInstructions()">
+      <summary><u>Instructions</u></summary>
+      <p id="instructionText"></p>
+    </details>
+
+    <footer>
+      | Eliana Daet Grade 9-Ruby
+      <br>
+      Source: <a href="https://www.metrolinemap.com/metro/manila/" target="_blank" style="color: #0B4E8A;">Metro Manila Rail Map</a>
+    </footer>
+
+  </div>
+
+  <script>
+    function showInstructions() {
+      document.getElementById('instructionText').textContent =
+        "Please press the Create Account button to start booking your ride!";
     }
-    
 
-</script>
+    window.onload = function() {
+      alert("Reminder: press the instructions button for more information!");
+    };
+  </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>
