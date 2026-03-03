@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SakayMo Fare Matrix</title>
+
+    <style>
+        body {
+            background-image: url('https://ichoose.ph/blogs/wp-content/uploads/2020/02/aerial-photo-of-cars-on-road-during-night-3214989.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: (135, 206, 250, 0.3);
+
+            
+        } 
+        #login-form
+      {background-color: rgba(135, 206, 250, 0.3);}
+      p{
+        font-family:Montserrat;
+      }
+    </style>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #0f2d3a;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #1f4e63;
+            width: 60%;
+            margin: auto;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        select, button {
+            padding: 8px;
+            margin: 10px;
+        }
+
+        .fare-box {
+            background-color: navy;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>SakayMo Fare Matrix</h2>
+
+    <p>Pick-up Location:</p>
+    <select id="pickup">
+        <option>North Ave</option>
+        <option>Quezon Ave</option>
+        <option>GMA Kamuning</option>
+    </select>
+
+    <p>Drop-off Location:</p>
+    <select id="dropoff">
+        <option>North Ave</option>
+        <option>Quezon Ave</option>
+        <option>GMA Kamuning</option>
+    </select>
+
+    <br>
+
+    <button onclick="computeFare()">Compute Fare</button>
+
+    <div class="fare-box">
+        Fare: ₱<span id="fare">0.00</span>
+    </div>
+</div>
+
+<script>
+function computeFare() {
+
+    var pickup = document.getElementById("pickup").value;
+    var dropoff = document.getElementById("dropoff").value;
+    var fare = 0;
+
+    if (pickup == dropoff) {
+        fare = 0;
+    }
+    else if (pickup == "North Ave" && dropoff == "Quezon Ave") {
+        fare = 15;
+    }
+    else if (pickup == "North Ave" && dropoff == "GMA Kamuning") {
+        fare = 20;
+    }
+    else if (pickup == "Quezon Ave" && dropoff == "GMA Kamuning") {
+        fare = 12;
+    }
+    else {
+        fare = 18; // default fare for other combinations
+    }
+
+    document.getElementById("fare").innerHTML = fare.toFixed(2);
+}
+</script>
+
+</body>
+</html>
